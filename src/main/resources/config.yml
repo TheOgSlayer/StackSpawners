@@ -1,0 +1,117 @@
+# Seconds between production cycles
+spawn-interval-seconds: 20
+# Mobs "killed" per spawner per cycle (multiplied by stack size)
+mobs-per-cycle: 4
+# Max spawners in a single stack
+max-stack: 100000
+# Breaking a spawner with anything (even bare hands) is instant
+instant-break: true
+
+# Money paid per 1 exp point stored (needs Vault + an economy plugin; otherwise exp is given as vanilla xp)
+exp-price: 0.5
+# Exp per mob if the mob is not listed below
+default-exp: 5
+
+# Drop format:  MATERIAL: "min-max"   or   MATERIAL: "min-max:chance"  (chance 0.0 - 1.0)
+mobs:
+  ZOMBIE:
+    exp: 5
+    drops:
+      ROTTEN_FLESH: "0-2"
+      IRON_INGOT: "1-1:0.025"
+      CARROT: "1-1:0.025"
+      POTATO: "1-1:0.025"
+  SKELETON:
+    exp: 5
+    drops:
+      BONE: "0-2"
+      ARROW: "0-2"
+  CREEPER:
+    exp: 5
+    drops:
+      GUNPOWDER: "0-2"
+  SPIDER:
+    exp: 5
+    drops:
+      STRING: "0-2"
+      SPIDER_EYE: "1-1:0.33"
+  ENDERMAN:
+    exp: 5
+    drops:
+      ENDER_PEARL: "0-1"
+  BLAZE:
+    exp: 10
+    drops:
+      BLAZE_ROD: "0-1"
+  ZOMBIFIED_PIGLIN:
+    exp: 5
+    drops:
+      ROTTEN_FLESH: "0-1"
+      GOLD_NUGGET: "0-1"
+      GOLD_INGOT: "1-1:0.025"
+  SLIME:
+    exp: 4
+    drops:
+      SLIME_BALL: "0-2"
+  WITCH:
+    exp: 5
+    drops:
+      GLOWSTONE_DUST: "0-2"
+      REDSTONE: "0-2"
+      SUGAR: "0-2"
+      STICK: "0-2"
+  IRON_GOLEM:
+    exp: 0
+    drops:
+      IRON_INGOT: "3-5"
+      POPPY: "0-2"
+  COW:
+    exp: 2
+    drops:
+      BEEF: "1-3"
+      LEATHER: "0-2"
+  PIG:
+    exp: 2
+    drops:
+      PORKCHOP: "1-3"
+  SHEEP:
+    exp: 2
+    drops:
+      MUTTON: "1-2"
+      WHITE_WOOL: "1-1"
+  CHICKEN:
+    exp: 2
+    drops:
+      CHICKEN: "1-1"
+      FEATHER: "0-2"
+      EGG: "0-1"
+
+# Price per ONE item when using "Sell All". Items not listed here are never sold.
+prices:
+  ROTTEN_FLESH: 0.5
+  IRON_INGOT: 5
+  CARROT: 1
+  POTATO: 1
+  BONE: 1
+  ARROW: 0.5
+  GUNPOWDER: 3
+  STRING: 1
+  SPIDER_EYE: 1.5
+  ENDER_PEARL: 10
+  BLAZE_ROD: 8
+  GOLD_NUGGET: 1
+  GOLD_INGOT: 8
+  SLIME_BALL: 3
+  GLOWSTONE_DUST: 2
+  REDSTONE: 1.5
+  SUGAR: 1
+  STICK: 0.2
+  POPPY: 0.5
+  BEEF: 3
+  LEATHER: 2
+  PORKCHOP: 3
+  MUTTON: 3
+  WHITE_WOOL: 2
+  CHICKEN: 2
+  FEATHER: 0.5
+  EGG: 0.5
